@@ -1,14 +1,13 @@
 use littlelemondb;
 
 insert into customers (CustomerID, FullName, Email, ContactNumber) values
-(1, "Anna Iversen", "anIve@gmail.com", 013456789),
-(2, "Joakim Iversen", "joIve@gmail.com", 013456789),
-(3, "Vanessa McCarthy", "vaMcCar@gmail.com", 013456789),
-(4, "Marcos Romero", "marRo@gmail.com", 013456789),
+(1, "Vanessa McCarthy", "vaMcCar@gmail.com", 013456789),
+(2, "Marcos Romero", "marRo@gmail.com", 013456789),
+(3, "Anna Iversen", "anIve@gmail.com", 013456789),
+(4, "Joakim Iversen", "joIve@gmail.com", 013456789),
 (5, "Hiroki Yamane", "hiYama@gmail.com", 013456789),
 (6, "Diana 'Pinto", "diaPinto@gmail.com", 013456789);
-
-select * from customers;
+-- select * from customers;
 
 INSERT INTO Staffs (StaffID, StaffName, Role, Address, Email, ContactNumber, AnnualSalary)
 VALUES
@@ -18,8 +17,7 @@ VALUES
 (04, 'Fatma Kaya', 'Assistant Chef', '132  Bay Lane, Chicago, IL', 'Fatma.k@littlelemon.com', 351963569, '45000'),
 (05, 'Elena Salvai', 'Head Waiter', '989 Thyme Square, EdgeWater, Chicago, IL', 'Elena.s@littlelemon.com', 351074198, '40000'),
 (06, 'John Millar', 'Receptionist', '245 Dill Square, Lincoln Park, Chicago, IL', 'John.m@littlelemon.com', 351584508, '35000');
-
-select * from Staffs;
+-- select * from Staffs;
 
 INSERT INTO Bookings (BookingID, BookingDate, TableNo, BookingSlot, CustomerID, StaffID)
 VALUES
@@ -29,55 +27,29 @@ VALUES
 (4, '2023-05-21', 15, '17:30:00', 4, 4),
 (5, '2023-05-27', 5, '18:30:00', 5, 2),
 (6, '2023-07-30', 8, '20:00:00', 6, 5);
+-- select * from Bookings;
 
-select * from Bookings;
-
-INSERT INTO Item (ItemID, Name, Type, Price)
+INSERT INTO MenuItems (MenuItemID, CourseName, StarterName, DessertName, Drink, Price)
 VALUES
-(1, 'Olives','Starters',5),
-(2, 'Flatbread','Starters', 5),
-(3, 'Minestrone', 'Starters', 8),
-(4, 'Tomato bread','Starters', 8),
-(5, 'Falafel', 'Starters', 7),
-(6, 'Hummus', 'Starters', 5),
-(7, 'Greek salad', 'Main Courses', 15),
-(8, 'Bean soup', 'Main Courses', 12),
-(9, 'Pizza', 'Main Courses', 15),
-(10,'Greek yoghurt','Desserts', 7),
-(11, 'Ice cream', 'Desserts', 6),
-(12, 'Cheesecake', 'Desserts', 4),
-(13, 'Athens White wine', 'Drinks', 25),
-(14, 'Corfu Red Wine', 'Drinks', 30),
-(15, 'Turkish Coffee', 'Drinks', 10),
-(16, 'Turkish Coffee', 'Drinks', 10),
-(17, 'Kabasa', 'Main Courses', 17);
+(1, 'Greek salad', 'Olives', 'Greek yoghurt', 'Athens White Wine', 52),
+(2, 'Pizza', 'Minestrone', 'Cheesecake', 'Italian Coffee', 37),
+(3, 'Kabasa', 'Falafel', 'Ice cream', 'Turkish Coffee', 40),
+(4, 'Bean soup', 'Flatbread', 'Ice cream', 'Corfu Red Wine', 53);
+-- select * from MenuItems;
 
-select * from Item;
-
-INSERT INTO Menu (MenuID, ItemID, Cuisine)
+INSERT INTO Menu (MenuID, MenuItemID, MenuName, Cuisine)
 VALUES
-(1, 1, 'Greek'),
-(1, 7, 'Greek'),
-(1, 10, 'Greek'),
-(1, 13, 'Greek'),
-(2, 3, 'Italian'),
-(2, 9, 'Italian'),
-(2, 12, 'Italian'),
-(2, 15, 'Italian'),
-(3, 5, 'Turkish'),
-(3, 17, 'Turkish'),
-(3, 11, 'Turkish'),
-(3, 16, 'Turkish');
-
-select * from Menu;
+(1, 3, 'Manti', 'Turkish'),
+(2, 1, 'Moussaka', 'Greek'),
+(3, 2, 'Aperitivo', 'Italian');
+-- select * from Menu;
 
 INSERT INTO Orders (OrderID, MenuID, BookingID, Quantity, TotalCost)
 VALUES
-(1, 1, 1, 2, 86),
-(2, 2, 2, 1, 37),
-(3, 2, 3, 1, 37),
-(4, 3, 4, 1, 40),
-(5, 1, 5, 1, 43);
-
-select * from Orders;
+(1, 1, 1, 5, 250),
+(2, 2, 2, 3, 200),
+(3, 2, 3, 1, 47),
+(4, 3, 4, 2, 105),
+(5, 1, 5, 1, 86);
+-- select * from Orders;
 
