@@ -1,5 +1,7 @@
-## Database Engineer Capstone
+## [Database Engineer Capstone]
+Link: https://www.coursera.org/learn/database-engineer-capstone
 
+Related skills:
 - [MySQL][0]
 - MySQL Workbench
 - [Tableau - Business Intelligence and Analytics Software][1]
@@ -11,11 +13,11 @@
 
 - Data Source Page
 
-<img src="Week3-Exercise\Data visualization/DataSource.png"/>
+<img src="WorkBook/DataSource.png"/>
 
 - Cuisine Sales and Profits
 
-<img src="Week3-Exercise\Data visualization/Task 4 - Cuisine Sales and Profits.png"/>
+<img src="WorkBook/Task 4 - Cuisine Sales and Profits.png"/>
 
 ### Global Supper Store Data
 
