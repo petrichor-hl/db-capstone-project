@@ -11,11 +11,11 @@
 
 - Data Source Page
 
-<img src="Week3-Exercise/DataSource.png"/>
+<img src="Week3-Exercise\Data visualization/DataSource.png"/>
 
 - Cuisine Sales and Profits
 
-<img src="Week3-Exercise/Task 4 - Cuisine Sales and Profits.png"/>
+<img src="Week3-Exercise\Data visualization/Task 4 - Cuisine Sales and Profits.png"/>
 
 ### Global Supper Store Data
 
