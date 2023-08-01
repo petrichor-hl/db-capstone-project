@@ -1,5 +1,4 @@
-## [Database Engineer Capstone]
-Link: https://www.coursera.org/learn/database-engineer-capstone
+## Database Engineer Capstone
 
 Related skills:
 - [MySQL][0]
@@ -7,12 +6,20 @@ Related skills:
 - [Tableau - Business Intelligence and Analytics Software][1]
 - Python
 
+This project belongs to [Meta Database Engineer Specialization][2]
+
+## Meta Database Engineer Professional Certificate
+
+<img src="addition/Coursera S8N2HXZRPRD7.png"/>
+
+**Credential ID:** S8N2HXZRPRD7  
+**Credential URL** https://www.coursera.org/account/accomplishments/specialization/certificate/S8N2HXZRPRD7
+
 ## Tableau Demo
 
 ### Little Lemon Data
 
 - Data Source Page
-
 <img src="WorkBook/DataSource.png"/>
 
 - Cuisine Sales and Profits
@@ -23,15 +30,16 @@ Related skills:
 
 - USA Sales Map
 
-<img src="addition_GSS/USA Sales Map.png"/>
+<img src="addition/USA Sales Map.png"/>
 
 - Sales Trend in USA
 
-<img src="addition_GSS/USA Sales Trend.png"/>
+<img src="addition/USA Sales Trend.png"/>
 
 - USA Profit Bubble Chart
 
-<img src="addition_GSS/USA Profit Bubble Chart.png"/>
+<img src="addition/USA Profit Bubble Chart.png"/>
 
 [0]: https://www.mysql.com/
 [1]: https://www.tableau.com/
+[2]: https://www.coursera.org/professional-certificates/meta-database-engineer?
